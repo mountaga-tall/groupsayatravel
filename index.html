@@ -3,158 +3,942 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Saya Travel - Sûreté Aéroportuaire et Multi-Services</title>
-    <!-- Google Fonts & FontAwesome -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Lien vers le fichier CSS -->
+
+    <title>GROUP SAYA TRAVEL | Voyage & Sûreté Aéroportuaire</title>
+    <meta name="description" content="GROUP SAYA TRAVEL - Sûreté aéroportuaire, voyage, billetterie et multi-services à Abidjan.">
+
+    <!-- Police -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <div class="nav-container">
-            <div class="logo-area">
-                <div class="logo-badge">GS</div>
-                <div class="logo-text">
-                    <h1>GROUP SAYA TRAVEL</h1>
-                    <span>Sûreté Aéroportuaire et Multi-Services</span>
-                </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<!-- =====================================================
+     CURSEUR LUMINEUX
+===================================================== -->
+<div class="cursor-glow"></div>
 
-    <!-- HERO SECTION -->
-    <section class="hero" id="accueil">
-        <div class="hero-content">
-            <h2>L'Excellence du Voyage & de la Sûreté Aéroportuaire</h2>
-            <p>Votre partenaire de confiance pour des prestations haut de gamme, une sécurité renforcée et un accompagnement multi-services sur mesure à Abidjan et à l'international.</p>
-            <a href="#contact" class="btn-glow">Réserver / Nous Contacter</a>
-        </div>
-    </section>
 
-    <!-- SERVICES SECTION -->
-    <section class="services" id="services">
-        <div class="section-title">
-            <h3>Nos Domaines d'Expertise</h3>
-            <p>Des prestations professionnelles adaptées à vos exigences de sécurité et de voyage</p>
-        </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="fa-solid fa-shield-halved"></i>
-                <h4>Sûreté Aéroportuaire</h4>
-                <p>Expertise pointue en matière de sécurité aéroportuaire, contrôle d'accès, sûreté des vols et protection des infrastructures aéronautiques.</p>
-            </div>
-            <div class="service-card">
-                <i class="fa-solid fa-plane-departure"></i>
-                <h4>Voyage & Billetterie</h4>
-                <p>Réservation de billets d'avion, organisation de séjours professionnels ou touristiques et conseils personnalisés pour vos déplacements.</p>
-            </div>
-            <div class="service-card">
-                <i class="fa-solid fa-briefcase"></i>
-                <h4>Multi-Services</h4>
-                <p>Prestations variées aux entreprises et particuliers, accompagnement administratif et prestations logistiques de premier plan.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section class="contact-section" id="contact">
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Parlons de votre projet</h3>
-                <p>Une question, un besoin de réservation ou de renseignements sur nos services ? Contactez notre équipe dès maintenant.</p>
-                
-                <div class="info-item">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div>
-                        <span>Siège social</span>
-                        <strong>Abidjan - Marcory Cité Hibiscus, Villa 92<br>07 BP Abidjan 07</strong>
-                    </div>
-                </div>
-
-                <div class="info-item">
-                    <i class="fa-solid fa-phone-volume"></i>
-                    <div>
-                        <span>Téléphones</span>
-                        <strong>+225 27 21 55 33 34<br>+225 07 68 07 68 29<br>+225 05 86 69 15 11</strong>
-                    </div>
-                </div>
-
-                <div class="info-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div>
-                        <span>Email direct</span>
-                        <strong>infos@groupsaya.ci</strong>
-                    </div>
-                </div>
-            </div>
-
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <input type="text" id="name" required>
-                    <label for="name">Votre Nom complet</label>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" required>
-                    <label for="email">Votre Adresse Email</label>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="phone" required>
-                    <label for="phone">Votre Téléphone</label>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" required></textarea>
-                    <label for="message">Votre Message / Demande</label>
-                </div>
-                <button type="submit" class="submit-btn">Envoyer le message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-col">
-                <h5>GROUP SAYA TRAVEL - SARL</h5>
-                <p>Sûreté Aéroportuaire et Multi-Services. Votre satisfaction et votre sécurité sont notre priorité absolue.</p>
-            </div>
-            <div class="footer-col">
-                <h5>Informations Bancaires & Légales</h5>
-                <p><strong>Capital :</strong> 1 000 000 FCFA</p>
-                <p><strong>RCCM :</strong> CI-ABJ-2019-B00706</p>
-                <p><strong>CC :</strong> 1902084L</p>
-                <p><strong>ECOBANK :</strong> CI0590 100112140247001 31</p>
-            </div>
-            <div class="footer-col">
-                <h5>Liens Rapides</h5>
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#services">Nos Services</a></li>
-                    <li><a href="#contact">Contactez-nous</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="legal-banner">
-            <p>&copy; 2026 GROUP SAYA TRAVEL. Tous droits réservés.</p>
-            <p>Abidjan, Côte d'Ivoire</p>
-        </div>
-    </footer>
-
-    <!-- TOAST NOTIFICATION -->
-    <div class="toast" id="toastNotification">
-        <i class="fa-solid fa-circle-check"></i> Message envoyé avec succès ! Nous vous recontacterons rapidement.
+<!-- =====================================================
+     LOADER
+===================================================== -->
+<div id="loader">
+    <div class="loader-logo">
+        <span>GS</span>
     </div>
 
-    <!-- Lien vers le fichier JavaScript -->
-    <script src="script.js"></script>
+    <div class="loader-text">
+        GROUP SAYA TRAVEL
+    </div>
+
+    <div class="loader-line">
+        <span></span>
+    </div>
+</div>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+<header id="header">
+
+    <div class="nav-container">
+
+        <a href="#accueil" class="logo-area">
+
+            <div class="logo-badge">
+                GS
+            </div>
+
+            <div class="logo-text">
+                <strong>GROUP SAYA TRAVEL</strong>
+                <span>Sûreté Aéroportuaire & Multi-Services</span>
+            </div>
+
+        </a>
+
+
+        <nav id="navigation">
+
+            <ul>
+                <li>
+                    <a href="#accueil">Accueil</a>
+                </li>
+
+                <li>
+                    <a href="#apropos">À propos</a>
+                </li>
+
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+
+                <li>
+                    <a href="#chiffres">Expertise</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+
+        <a href="#contact" class="nav-button">
+            <i class="fa-solid fa-paper-plane"></i>
+            Nous contacter
+        </a>
+
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+<section class="hero" id="accueil">
+
+    <!-- Particules -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Halo -->
+    <div class="hero-orb orb-one"></div>
+    <div class="hero-orb orb-two"></div>
+
+
+    <div class="hero-content reveal">
+
+        <div class="hero-badge">
+            <span></span>
+            Votre partenaire de confiance
+        </div>
+
+
+        <h1>
+
+            L'excellence du
+            <span>voyage</span>
+
+            <br>
+
+            & de la
+            <span>sûreté</span>
+
+        </h1>
+
+
+        <p>
+            GROUP SAYA TRAVEL vous accompagne avec des solutions
+            professionnelles en sûreté aéroportuaire, voyage,
+            billetterie et multi-services.
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="#services" class="btn-primary">
+
+                Découvrir nos services
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a href="#contact" class="btn-outline">
+
+                <i class="fa-solid fa-phone"></i>
+
+                Nous contacter
+
+            </a>
+
+        </div>
+
+
+        <div class="hero-trust">
+
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                Sécurité
+            </div>
+
+            <div>
+                <i class="fa-solid fa-plane"></i>
+                Voyage
+            </div>
+
+            <div>
+                <i class="fa-solid fa-star"></i>
+                Excellence
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="scroll-indicator">
+
+        <span>Découvrir</span>
+
+        <i class="fa-solid fa-chevron-down"></i>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     À PROPOS
+===================================================== -->
+<section class="about section" id="apropos">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div class="about-visual reveal-left">
+
+                <div class="about-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=85"
+                        alt="Avion en voyage"
+                    >
+
+                    <div class="image-overlay"></div>
+
+                </div>
+
+
+                <div class="floating-card">
+
+                    <i class="fa-solid fa-award"></i>
+
+                    <div>
+                        <strong>Excellence</strong>
+                        <span>Notre engagement</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-content reveal-right">
+
+                <div class="section-label">
+                    GROUP SAYA TRAVEL
+                </div>
+
+                <h2>
+                    Votre partenaire pour
+                    <span>aller plus loin.</span>
+                </h2>
+
+                <p>
+                    Nous proposons des prestations pensées pour
+                    répondre aux besoins des particuliers,
+                    professionnels et entreprises.
+                </p>
+
+                <p>
+                    Notre ambition est simple : offrir une expérience
+                    fiable, professionnelle et personnalisée à chaque
+                    client.
+                </p>
+
+
+                <div class="about-list">
+
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Accompagnement personnalisé</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Professionnalisme et disponibilité</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Solutions adaptées à vos besoins</span>
+                    </div>
+
+                </div>
+
+
+                <a href="#contact" class="text-button">
+
+                    Parlons de votre projet
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+<section class="services section" id="services">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <div class="section-label">
+                NOS EXPERTISES
+            </div>
+
+            <h2>
+                Des services conçus
+                <span>pour vous.</span>
+            </h2>
+
+            <p>
+                Une expertise diversifiée pour vous accompagner
+                dans vos projets de voyage et vos besoins professionnels.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+            <!-- SERVICE 1 -->
+            <article class="service-card tilt reveal">
+
+                <div class="service-number">
+                    01
+                </div>
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <h3>
+                    Sûreté Aéroportuaire
+                </h3>
+
+                <p>
+                    Des solutions professionnelles dédiées à la sûreté,
+                    au contrôle et à la protection des opérations
+                    aéroportuaires.
+                </p>
+
+                <a href="#contact">
+                    En savoir plus
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <!-- SERVICE 2 -->
+            <article class="service-card tilt reveal">
+
+                <div class="service-number">
+                    02
+                </div>
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-plane-departure"></i>
+                </div>
+
+                <h3>
+                    Voyage & Billetterie
+                </h3>
+
+                <p>
+                    Réservation de billets, organisation de déplacements,
+                    séjours professionnels ou touristiques et
+                    accompagnement personnalisé.
+                </p>
+
+                <a href="#contact">
+                    En savoir plus
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <!-- SERVICE 3 -->
+            <article class="service-card tilt reveal">
+
+                <div class="service-number">
+                    03
+                </div>
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+
+                <h3>
+                    Multi-Services
+                </h3>
+
+                <p>
+                    Des prestations variées destinées aux entreprises
+                    et particuliers avec un accompagnement flexible
+                    et professionnel.
+                </p>
+
+                <a href="#contact">
+                    En savoir plus
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     BANDEAU
+===================================================== -->
+<section class="marquee-section">
+
+    <div class="marquee">
+
+        <div class="marquee-content">
+
+            <span>GROUP SAYA TRAVEL</span>
+            <i class="fa-solid fa-star"></i>
+
+            <span>VOYAGE</span>
+            <i class="fa-solid fa-star"></i>
+
+            <span>SÛRETÉ</span>
+            <i class="fa-solid fa-star"></i>
+
+            <span>EXCELLENCE</span>
+            <i class="fa-solid fa-star"></i>
+
+            <span>MULTI-SERVICES</span>
+            <i class="fa-solid fa-star"></i>
+
+            <span>GROUP SAYA TRAVEL</span>
+            <i class="fa-solid fa-star"></i>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CHIFFRES
+===================================================== -->
+<section class="stats section" id="chiffres">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <div class="section-label">
+                NOS ENGAGEMENTS
+            </div>
+
+            <h2>
+                Une vision tournée vers
+                <span>l'excellence.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="stats-grid">
+
+            <div class="stat-card reveal">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-user-shield"></i>
+                </div>
+
+                <strong class="counter" data-target="100">
+                    0
+                </strong>
+
+                <span>%</span>
+
+                <p>
+                    Engagement
+                </p>
+
+            </div>
+
+
+            <div class="stat-card reveal">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+
+                <strong class="counter" data-target="24">
+                    0
+                </strong>
+
+                <span>/7</span>
+
+                <p>
+                    Disponibilité
+                </p>
+
+            </div>
+
+
+            <div class="stat-card reveal">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <strong class="counter" data-target="1">
+                    0
+                </strong>
+
+                <span></span>
+
+                <p>
+                    Base à Abidjan
+                </p>
+
+            </div>
+
+
+            <div class="stat-card reveal">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <strong class="counter" data-target="3">
+                    0
+                </strong>
+
+                <span>+</span>
+
+                <p>
+                    Domaines d'expertise
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+<section class="contact section" id="contact">
+
+    <div class="container">
+
+        <div class="contact-wrapper reveal">
+
+            <div class="contact-info">
+
+                <div class="section-label">
+                    CONTACT
+                </div>
+
+                <h2>
+                    Parlons de votre
+                    <span>projet.</span>
+                </h2>
+
+                <p>
+                    Vous avez une question, un besoin de réservation
+                    ou souhaitez obtenir davantage d'informations ?
+                    Notre équipe est à votre écoute.
+                </p>
+
+
+                <div class="contact-items">
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <small>Siège social</small>
+
+                            <strong>
+                                Abidjan - Marcory Cité Hibiscus,
+                                Villa 92
+                                <br>
+                                07 BP Abidjan 07
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div>
+                            <small>Téléphones</small>
+
+                            <strong>
+                                +225 27 21 55 33 34
+                                <br>
+                                +225 07 68 07 68 29
+                                <br>
+                                +225 05 86 69 15 11
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <small>Email</small>
+
+                            <strong>
+                                infos@groupsaya.ci
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="https://wa.me/2250768076829"
+                    target="_blank"
+                    class="whatsapp-button"
+                >
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Écrire sur WhatsApp
+
+                </a>
+
+            </div>
+
+
+
+            <!-- FORMULAIRE -->
+            <form
+                class="contact-form"
+                id="contactForm"
+            >
+
+                <div class="form-title">
+                    <h3>
+                        Envoyez-nous un message
+                    </h3>
+
+                    <p>
+                        Nous vous répondrons dans les meilleurs délais.
+                    </p>
+                </div>
+
+
+                <div class="input-group">
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    >
+
+                    <label for="name">
+                        Nom complet
+                    </label>
+
+                    <i class="fa-solid fa-user"></i>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+
+                    <label for="email">
+                        Adresse email
+                    </label>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        required
+                    >
+
+                    <label for="phone">
+                        Téléphone
+                    </label>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </div>
+
+
+                <div class="input-group textarea-group">
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        required
+                    ></textarea>
+
+                    <label for="message">
+                        Votre message
+                    </label>
+
+                    <i class="fa-solid fa-message"></i>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                    id="submitButton"
+                >
+
+                    <span>
+                        Envoyer le message
+                    </span>
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+
+                <div
+                    class="form-message"
+                    id="formMessage"
+                ></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <div class="logo-area">
+
+                    <div class="logo-badge">
+                        GS
+                    </div>
+
+                    <div class="logo-text">
+                        <strong>GROUP SAYA TRAVEL</strong>
+                        <span>Sûreté & Multi-Services</span>
+                    </div>
+
+                </div>
+
+                <p>
+                    Votre partenaire de confiance pour vos voyages,
+                    vos déplacements professionnels et vos besoins
+                    en sûreté aéroportuaire.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Navigation
+                </h4>
+
+                <a href="#accueil">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Informations
+                </h4>
+
+                <p>
+                    <strong>Capital :</strong>
+                    1 000 000 FCFA
+                </p>
+
+                <p>
+                    <strong>RCCM :</strong>
+                    CI-ABJ-2019-B00706
+                </p>
+
+                <p>
+                    <strong>CC :</strong>
+                    1902084L
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Nous suivre
+                </h4>
+
+                <div class="socials">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a
+                        href="https://wa.me/2250768076829"
+                        target="_blank"
+                    >
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 GROUP SAYA TRAVEL.
+                Tous droits réservés.
+            </p>
+
+            <p>
+                Abidjan, Côte d'Ivoire
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     TOAST
+===================================================== -->
+<div
+    class="toast"
+    id="toast"
+>
+    <i class="fa-solid fa-circle-check"></i>
+
+    <div>
+        <strong>Message envoyé !</strong>
+        <span>Merci pour votre demande.</span>
+    </div>
+</div>
+
+
+
+<!-- =====================================================
+     SCRIPT
+===================================================== -->
+<script src="script.js"></script>
+
 </body>
 </html>
