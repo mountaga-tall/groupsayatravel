@@ -38,7 +38,7 @@
       other:"Other request", messageLabel:"Your message *", messagePH:"Tell us about your project…",
       consent:"I agree that the information entered may be used to respond to my request.",
       send:"Prepare my request ↗", formNote:"Your email application will open with your request pre-filled.",
-      footer:"Travel, security and service solutions—in Abidjan and beyond.", legal:"Each service is confirmed according to the request and applicable conditions.",
+      footer:"Travel, security and service solutions—in Abidjan and beyond.", linkedin:"Follow us on LinkedIn", legal:"Each service is confirmed according to the request and applicable conditions.",
       whatsapp:"WhatsApp", install:"Install app", installEyebrow:"ALWAYS WITHIN REACH", installTitle:"Install GROUP SAYA TRAVEL",
       installText:"Add the website to your home screen so you can find it easily.", installConfirm:"Install now", installLater:"Maybe later"
     }
@@ -108,12 +108,11 @@
 
     const select = $('select[name="service"]');
     if (select) {
-      const options = [...select.options];
-      options.forEach(option => {
-        if (option.value === "") return;
-        const mapped = serviceNames[option.dataset.serviceFr || option.value];
-        if (!option.dataset.serviceFr) option.dataset.serviceFr = option.value || option.textContent;
-        const name = serviceNames[option.dataset.serviceFr];
+      [...select.options].forEach(option => {
+        if (!option.value) return;
+        const frenchName = option.dataset.serviceFr || option.value;
+        option.dataset.serviceFr = frenchName;
+        const name = serviceNames[frenchName];
         if (name) option.textContent = name[language];
       });
     }
@@ -187,7 +186,7 @@
       const phone = String(data.get("phone") || "").trim();
       const service = String(data.get("service") || "").trim();
       const message = String(data.get("message") || "").trim();
-      const serviceLabel = service || (language === "en" ? "Other request" : "Autre demande");
+      const serviceLabel = serviceNames[service]?.[language] || service || (language === "en" ? "Other request" : "Autre demande");
       const subject = (language === "en" ? "Website enquiry — " : "Demande depuis le site — ") + serviceLabel;
       const body = [
         (language === "en" ? "Hello GROUP SAYA TRAVEL," : "Bonjour GROUP SAYA TRAVEL,"),
