@@ -229,6 +229,10 @@ h1 em, h2 em { font-style: normal; color: var(--accent); }
 .footer-main, .footer-bottom { width: min(1320px, calc(100% - 48px)); margin-inline: auto; display: flex; align-items: center; gap: 30px; }
 .footer-main { min-height: 128px; }
 .footer-main > p { max-width: 470px; margin: 0 auto 0 0; color: var(--muted); font-size: .8rem; }
+.linkedin-link { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 10px; color: var(--muted-strong); font-size: .75rem; font-weight: 700; transition: color .2s ease; }
+.linkedin-link svg { display: block; width: 28px; height: 28px; flex: 0 0 28px; border-radius: 3px; }
+.linkedin-link:hover { color: var(--accent); }
+.linkedin-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
 .back-top { display: grid; width: 44px; height: 44px; flex: 0 0 44px; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--accent); font-size: 1.3rem; transition: background .2s ease, color .2s ease, transform .2s ease; }
 .back-top:hover { color: var(--accent-ink); background: var(--accent); transform: translateY(-3px); }
 .footer-bottom { min-height: 65px; justify-content: space-between; gap: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: .67rem; }
