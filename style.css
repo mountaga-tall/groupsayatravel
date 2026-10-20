@@ -1,5 +1,4 @@
 /* GROUP SAYA TRAVEL — design system & responsive styles */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
   color-scheme: dark;
@@ -358,4 +357,10 @@ h1 em, h2 em { font-style: normal; color: var(--accent); }
   body { color: #111; background: #fff; }
   .section-shell { width: 100%; }
   .hero, .intro, .contact { padding-block: 24px; }
+}
+
+/* Motion-safe progressive reveal; content remains visible without JS. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-on-scroll { opacity: 0; transform: translateY(18px); transition: opacity .65s var(--ease), transform .65s var(--ease); transition-delay: var(--reveal-delay, 0ms); }
+  .reveal-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
 }

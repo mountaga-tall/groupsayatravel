@@ -297,11 +297,11 @@
     }, { once: true });
   }
 
-  // Capture the French originals before applying a stored language.
-  $$("[data-i18n]").forEach(element => { element.dataset.originalText ??= element.textContent; });
-  $$("[data-i18n-html]").forEach(element => { element.dataset.originalHtml ??= element.innerHTML; });
-  $$("[data-i18n-placeholder]").forEach(element => { element.dataset.originalPlaceholder ??= element.placeholder; });
-  $$('select[name="service"] option').forEach(option => {
+  // Snapshot source-language strings before applying any saved language preference.
+  $("[data-i18n]").forEach(element => { element.dataset.originalText ??= element.textContent; });
+  $("[data-i18n-html]").forEach(element => { element.dataset.originalHtml ??= element.innerHTML; });
+  $("[data-i18n-placeholder]").forEach(element => { element.dataset.originalPlaceholder ??= element.placeholder; });
+  $('select[name="service"] option').forEach(option => {
     if (option.value && !option.dataset.serviceFr) option.dataset.serviceFr = option.value;
   });
   translatePage(language);
