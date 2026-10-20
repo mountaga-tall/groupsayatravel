@@ -1,5 +1,5 @@
 /* GROUP SAYA TRAVEL — lightweight offline shell */
-const CACHE_NAME = "group-saya-travel-v2";
+const CACHE_NAME = "group-saya-travel-v3";
 const APP_SHELL = ["./", "./index.html", "./style.css", "./script.js", "./manifest.webmanifest", "./logo.png"];
 
 self.addEventListener("install", event => {
