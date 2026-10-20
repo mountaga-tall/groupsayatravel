@@ -1,0 +1,20 @@
+{
+  "name": "GROUP SAYA TRAVEL",
+  "short_name": "SAYA TRAVEL",
+  "description": "Voyage, billetterie, sûreté aéroportuaire et fret aérien à Abidjan.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#071321",
+  "theme_color": "#081526",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
